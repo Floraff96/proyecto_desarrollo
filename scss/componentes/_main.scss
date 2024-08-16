@@ -1,0 +1,109 @@
+.nosotros {
+        width: 100%;
+        height: 5%;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 40px;
+    } 
+
+    .carousel {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30%;
+    .carousel-inner {
+        width: 100%;
+            div img {
+                width: 100%;
+                height: 100%;
+                }
+        }
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+    .productos .item {
+        @extend %card-style;
+        @include transition(transform,0.3s );
+            &:hover {
+                transform: translateY(-10px);
+                box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            }
+        img {
+        width: 100%;
+        height: auto;
+            }
+
+    .description {
+        padding: 10px;
+
+        p {
+        margin: 10px 0;
+        color: #555;
+            }
+        }
+    }
+
+    .talles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+
+    .step {
+        @extend %card-style;
+        padding: 50px;
+        width: 100%;
+        max-width: 800px;
+        margin: 10px 0;
+
+        img {
+        width: 100%;
+        height: auto;
+        border-radius: $border-radius;
+        margin: 20px 0;
+        }
+
+        .step-description {
+        text-align: center;
+
+        h2 {
+            margin: 0;
+            font-size: 1.5em;
+            color: #333;
+        }
+
+        p,
+        ol {
+            margin: 10px 0 0;
+            color: #555;
+            text-align: left;
+        }
+        }
+    }
+    }
+
+
+button {
+    background-color: antiquewhite !important;
+    border: none;
+    color: $text-color !important;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 4px;
+        &:hover {
+        background-color: bisque;
+        }
+}
+

@@ -1,0 +1,48 @@
+@media screen and (max-width: 850px) {
+    header h1 {
+      font-size: 60px;
+    }
+  
+    .nav div ul li a {
+      font-size: 16px;
+    }
+  
+    .gallery {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .step {
+      padding: 30px;
+    }
+  
+    .step-description h2 {
+      font-size: 1.2em;
+    }
+  }
+  
+  @media screen and (max-width: 450px) {
+    header h1 {
+      font-size: 40px;
+    }
+  
+    .nav div ul li a {
+      font-size: 14px;
+    }
+  
+    .gallery {
+      grid-template-columns: 1fr;
+    }
+  
+    .step {
+      padding: 20px;
+    }
+  
+    .step-description h2 {
+      font-size: 1em;
+    }
+  
+    button {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }

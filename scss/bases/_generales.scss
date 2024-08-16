@@ -1,0 +1,34 @@
+/**!-------FONTS-----*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*------RESETS-------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+}
+body {
+    font-family: "Noto Serif", serif;
+}
+/*--- VARIABLES---*/
+
+$background-color: #FFFBF7;
+$text-color: black;
+$hover-color: burlywood;
+$btn-border-color: chocolate;
+$box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+$border-radius: 8px;
+
+@mixin transition($property, $duration) {
+    transition: $property $duration ease;
+    }
+
+    %card-style {
+    background-color: #fff;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    overflow: hidden;
+    }
+
+
